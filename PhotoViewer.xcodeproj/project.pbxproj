@@ -13,6 +13,8 @@
 		3CF9DC781A13290B007BDE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9DC771A13290B007BDE29 /* Images.xcassets */; };
 		3CF9DC7B1A13290B007BDE29 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9DC791A13290B007BDE29 /* LaunchScreen.xib */; };
 		3CF9DC871A13290B007BDE29 /* PhotoViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9DC861A13290B007BDE29 /* PhotoViewerTests.swift */; };
+		3CF9DC911A132ABD007BDE29 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9DC901A132ABD007BDE29 /* CollectionViewCell.swift */; };
+		3CF9DC931A132CCC007BDE29 /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CF9DC921A132CCC007BDE29 /* circle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3CF9DC801A13290B007BDE29 /* PhotoViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF9DC851A13290B007BDE29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CF9DC861A13290B007BDE29 /* PhotoViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerTests.swift; sourceTree = "<group>"; };
+		3CF9DC901A132ABD007BDE29 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3CF9DC921A132CCC007BDE29 /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../Downloads/UICollectionView/UICollectionView/circle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,14 @@
 		3CF9DC6D1A13290B007BDE29 /* PhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
+				3CF9DC921A132CCC007BDE29 /* circle.png */,
 				3CF9DC701A13290B007BDE29 /* AppDelegate.swift */,
 				3CF9DC721A13290B007BDE29 /* ViewController.swift */,
 				3CF9DC741A13290B007BDE29 /* Main.storyboard */,
 				3CF9DC771A13290B007BDE29 /* Images.xcassets */,
 				3CF9DC791A13290B007BDE29 /* LaunchScreen.xib */,
 				3CF9DC6E1A13290B007BDE29 /* Supporting Files */,
+				3CF9DC901A132ABD007BDE29 /* CollectionViewCell.swift */,
 			);
 			path = PhotoViewer;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 				3CF9DC761A13290B007BDE29 /* Main.storyboard in Resources */,
 				3CF9DC7B1A13290B007BDE29 /* LaunchScreen.xib in Resources */,
 				3CF9DC781A13290B007BDE29 /* Images.xcassets in Resources */,
+				3CF9DC931A132CCC007BDE29 /* circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +221,7 @@
 			files = (
 				3CF9DC731A13290B007BDE29 /* ViewController.swift in Sources */,
 				3CF9DC711A13290B007BDE29 /* AppDelegate.swift in Sources */,
+				3CF9DC911A132ABD007BDE29 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PhotoViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
